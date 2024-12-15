@@ -1,7 +1,7 @@
-import Splash from "./Splash";
+import Login from "./Source/Login";
 export default function App() {
   return (
-    <Splash></Splash>
+    <Login></Login>
   );
 }
 
