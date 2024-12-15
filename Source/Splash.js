@@ -15,7 +15,7 @@ const Splash = () => {
 
   return (
     <View style={{ backgroundColor: 'black', paddingTop: 350, flex: 1, paddingLeft: 100 }}>
-      <Image source={require('./assets/Logo.png')} style={{ width: 150, height: 150 }} />
+      <Image source={require('../assets/Logo.png')} style={{ width: 150, height: 150 }} />
     </View>
   );
 };
