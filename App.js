@@ -7,7 +7,7 @@ import Gender from "./Source/signupgender";
 import Name from "./Source/signupname";
 export default function App() {
   return (
-   <Name></Name>
+ <Name></Name>
   );
 }
 

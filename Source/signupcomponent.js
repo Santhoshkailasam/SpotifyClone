@@ -10,8 +10,8 @@ const Signupcomponent = (props) =>{
             <Text style={{color:"white",marginLeft:90,marginTop:5,fontWeight:"bold",fontSize:16}}>Create account</Text>
             </View>
             <Text style={styles.emailtext}>{props.text}</Text>
-        <View style= {styles.inputbox}>
-        <TextInput />
+        <View style= {{flexDirection:"row"}}>
+        <TextInput style={{  backgroundColor:'#777777',height:45,width:310,marginLeft: 25,borderRadius:5}}></TextInput>
         {props.icon && <View style={styles.tick}>{props.icon}</View>}
         </View>
         <Text style={{color:"white",marginLeft:25,fontSize:10,marginTop:5}}>{props.must}</Text>
