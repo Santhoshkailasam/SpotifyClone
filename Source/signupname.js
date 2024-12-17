@@ -1,4 +1,4 @@
-import Signupcomponent from "./signupcomponent";
+import Signupcomponent from "../Components/signupcomponent";
 import Tick from "../assets/spotify/icon/tick_icon.svg";
 import React from "react";
 import { Text,View,StyleSheet } from "react-native";

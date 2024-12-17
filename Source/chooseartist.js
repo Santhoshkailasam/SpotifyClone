@@ -1,9 +1,9 @@
 import React from "react";
 import { Text,View,StyleSheet,TextInput,Image,ScrollView} from "react-native";
 import Back from "../assets/spotify/icon/ChevronLeft.svg";
-import Searchcomponent from "./searchcomponent";
-import Artistimage from "./artistcomponent";
-const Artistcomponent=()=>{
+import Searchcomponent from "../Components/searchcomponent";
+import Artistimage from "../Components/artistcomponent";
+const Artist=()=>{
     return(
         <View style={{backgroundColor:"black",flex:1,}}>
         <View style={{flexDirection:"row"}}> 
@@ -55,4 +55,4 @@ const Artistcomponent=()=>{
        
     )
 };
-export default Artistcomponent;
+export default Artist;

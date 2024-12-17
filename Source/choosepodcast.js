@@ -1,7 +1,7 @@
 import React from "react";
 import { Text,View,StyleSheet,TouchableOpacity,ScrollView} from "react-native";
-import Searchcomponent from "./searchcomponent";
-import Podcastimage from "./podcastimagecomponent";
+import Searchcomponent from "../Components/searchcomponent";
+import Podcastimage from "../Components/podcastimagecomponent";
 const Podcast = () =>{
     return(
         <View style={{backgroundColor:"black",flex:1}}>
