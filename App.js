@@ -5,9 +5,11 @@ import Splash from "./Source/Splash";
 import Password from "./Source/signupassword";
 import Gender from "./Source/signupgender";
 import Name from "./Source/signupname";
+import Artist from "./Source/ChooseArtist.";
+import Artistcomponent from "./Source/chooseartistcoponent";
 export default function App() {
   return (
- <Name></Name>
+ <Artist></Artist>
   );
 }
 
