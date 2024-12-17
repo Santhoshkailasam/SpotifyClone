@@ -8,6 +8,7 @@ import Name from "./Source/signupname";
 import Artist from "./Source/chooseartist";
 import Podcast from "./Source/choosepodcast";
 import Homescreen from "./Source/Homescreens";
+import Footer from "./Components/footercomponent";
 export default function App() {
   return (
      <Homescreen></Homescreen>
