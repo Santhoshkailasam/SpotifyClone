@@ -1,5 +1,5 @@
 import React from "react";
-import { Text,View,StyleSheet,Image,TouchableOpacity} from "react-native";
+import { Text,View,StyleSheet,Image,TouchableOpacity,ScrollView} from "react-native";
 import Notificationicon from "../assets/spotify/icon/notificationicon.svg"
 import Settingsicon from "../assets/spotify/icon/Settings.svg"
 import Orientationlockicon from "../assets/spotify/icon/orientation lock.svg"
@@ -26,6 +26,8 @@ const Homescreen =()=>(
                 </TouchableOpacity>
             </View>
         </View>
+        <ScrollView>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <View style={{ flexDirection: "row" }}>
             <View>
                 <Album style={styles.svg} width={90} height={90}></Album>
@@ -40,6 +42,7 @@ const Homescreen =()=>(
                 text3="India no"
                 valueText={0}></Artistimage>
         </View>
+        </ScrollView>
         <View style={{ flexDirection: "row" }}>
             <Image source={require("../assets/spotify/image/Home/sponser.png")}
                 style={styles.image}></Image>
@@ -61,6 +64,7 @@ const Homescreen =()=>(
             </View>
         </View>
         <Text style={{ color: "white", fontSize: 20, fontWeight: "bold", marginLeft: 10, marginTop: 12 }}>Editor's picks</Text>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <View style={{ flexDirection: "row" }}>
             <View>
                 <Image source={require("../assets/spotify/image/Home/nandu_pudi.png")} style={{ height: 150, width: 150, marginLeft: 10 }}></Image>
@@ -72,6 +76,8 @@ const Homescreen =()=>(
             </View>
             <Image source={require("../assets/spotify/image/Home/sting.png")} style={{ height: 150, width: 150, marginLeft: 10 }}></Image>
         </View>
+        </ScrollView>
+        </ScrollView>
         <View style={styles.playbox}>
             <Image source={require("../assets/spotify/image/Home/1_icon.png")} style={{ marginLeft:8, width: 40, height: 40, marginTop: 10 }}></Image>
             <View>
@@ -99,7 +105,6 @@ const Homescreen =()=>(
                      </View>
                      </TouchableOpacity>
                     </View>
-                   
                     </View>  
                    </View>
         <Footer></Footer>
@@ -127,6 +132,8 @@ const styles= StyleSheet.create({
         marginLeft:10,
         borderRadius:4,
         flexDirection:"row",
+        borderBottomColor:"white",
+        borderBottomWidth:1
     },
       bar: {
         width: 5, 
