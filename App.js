@@ -9,9 +9,12 @@ import Artist from "./Source/chooseartist";
 import Podcast from "./Source/choosepodcast";
 import Homescreen from "./Source/Homescreens";
 import Footer from "./Components/footercomponent";
+import Searchscreen from "./Source/searchscreen";
+import Searchall from "./Source/Allsearchscreen";
+import AllsearchComponent from "./Components/all searchcomponent";
 export default function App() {
   return (
-     <Homescreen></Homescreen>
+   <Searchall></Searchall>
   );
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Text,View,StyleSheet,TextInput} from "react-native";
-import Search from "../assets/spotify/icon/Search_icon.svg";
+import Search from "../assets/spotify/icon/Search-icon.svg";
 const Searchcomponent=()=>{
     return(
         <View style={styles.searchbox}>
