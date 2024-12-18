@@ -7,6 +7,9 @@ import Hearticon from "../assets/spotify/icon/heart_icon.svg"
 import Moreicon from "../assets/spotify/icon/more_icon.svg"
 import Downloadicon from"../assets/spotify/icon/download_icon.svg"
 import Pause from "../assets/spotify/icon/Pause-icon.svg"
+import Albumtext from "../Components/TextAlbumcomponent";
+import PlayBoxComponent from "../Components/Playboxcomponent";
+import Footer from "../Components/footercomponent";
 const AlbumViewscreen = (props) => {
     return (
         <LinearGradient
@@ -27,7 +30,9 @@ const AlbumViewscreen = (props) => {
                     <Text style={{color:"#777777",marginLeft:10,marginTop:10,fontWeight:"bold",fontSize:20,lineHeight:17,}}>.</Text>
                     <Text style={{color:"#777777",marginLeft:10,marginTop:11,fontWeight:"bold"}}>2000</Text>
                    <View style={styles.circle}>
+                    <TouchableOpacity>
                     <Pause style={{marginTop:15}}></Pause>
+                    </TouchableOpacity>
                    </View>
                 </View>
                 <View style={{flexDirection:"row"}}>
@@ -43,6 +48,21 @@ const AlbumViewscreen = (props) => {
                   </TouchableOpacity>
                 </View>
                 </View>
+                  <Albumtext
+                  text={"Love me DO-Mono/Remastered"}
+                  Color={"white"}></Albumtext>
+                  <Albumtext
+                  text={"From me DO-Mono/Remastered"}
+                  Color={"lightgreen"}></Albumtext>
+                  <Albumtext
+                    text={"She Loves You-Mono/Remastered"}
+                    Color={"white"}>
+                  </Albumtext>
+                  <Albumtext
+                  text={"I want you Hold Your Hand-Remastered 2015"}
+                  Color={"white"}></Albumtext>
+                <PlayBoxComponent></PlayBoxComponent>
+                <Footer></Footer>
             </View>
         </LinearGradient>
     );
@@ -53,8 +73,8 @@ const styles = StyleSheet.create({
         flex: 1, 
     },
     svg: {
-        marginTop: 80,
-        marginLeft: 30,
+        marginTop: 40,
+        marginLeft:50,
     },
     backIcon: {
         marginLeft: 10,
