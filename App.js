@@ -12,9 +12,10 @@ import Footer from "./Components/footercomponent";
 import Searchscreen from "./Source/searchscreen";
 import Searchall from "./Source/Allsearchscreen";
 import AllsearchComponent from "./Components/all searchcomponent";
+import AlbumView from "./Source/albumViewscreen";
 export default function App() {
   return (
-   <Searchall></Searchall>
+   <AlbumView></AlbumView>
   );
 }
 
