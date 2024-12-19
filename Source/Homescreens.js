@@ -38,8 +38,7 @@ const Homescreen =()=>(
                 image3={require("../assets/spotify/image/library/p5.png")}
                 text1="Lana Del Ray"
                 text2="Marvin Gaye"
-                text3="India no"
-                valueText={0}></Artistimage>
+                text3="India no"></Artistimage>
         </View>
         </ScrollView>
         <View style={{ flexDirection: "row" }}>
