@@ -16,7 +16,9 @@ const AlbumViewscreen = (props) => {
             colors={['#c63224', '#641D17', '#271513', '#121212']}
             style={styles.gradient} >
             <View style={{ flexDirection: "row" }}>
+                <TouchableOpacity>
                     <Backicon width={20} height={20} style={styles.backIcon}  />
+                    </TouchableOpacity>
                 <Albumicon style={styles.svg} width={200} height={300} />
             </View>
             <View>

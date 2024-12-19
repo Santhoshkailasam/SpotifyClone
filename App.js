@@ -14,9 +14,11 @@ import Searchall from "./Source/Allsearchscreen";
 import AllsearchComponent from "./Components/all searchcomponent";
 import AlbumView from "./Source/albumViewscreen";
 import Albumcontrol from "./Source/Albumcontrolscreenpage";
+import Trackview from "./Source/TrackViewScreen";
+import AlbumViewscreen from "./Source/albumViewscreen";
 export default function App() {
   return (
-   <Albumcontrol></Albumcontrol>
+   <AlbumViewscreen></AlbumViewscreen>
   );
 }
 
