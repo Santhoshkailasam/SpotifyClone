@@ -13,9 +13,10 @@ import Searchscreen from "./Source/searchscreen";
 import Searchall from "./Source/Allsearchscreen";
 import AllsearchComponent from "./Components/all searchcomponent";
 import AlbumView from "./Source/albumViewscreen";
+import Albumcontrol from "./Source/Albumcontrolscreenpage";
 export default function App() {
   return (
-   <AlbumView></AlbumView>
+   <Albumcontrol></Albumcontrol>
   );
 }
 
