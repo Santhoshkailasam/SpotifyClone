@@ -99,9 +99,6 @@ const LibraryScreen =()=>{
         </View>
         </TouchableOpacity>
         </ScrollView>
-       <Footer 
-       press={gotoHomescreen}
-       press1={gotosearchscreen}></Footer>
     </View>
     )
 };
