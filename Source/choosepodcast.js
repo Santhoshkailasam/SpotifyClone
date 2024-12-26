@@ -2,7 +2,12 @@ import React from "react";
 import { Text,View,StyleSheet,TouchableOpacity,ScrollView} from "react-native";
 import Searchcomponent from "../Components/searchcomponent";
 import Podcastimage from "../Components/podcastimagecomponent";
+import { useNavigation } from "@react-navigation/native";
 const Podcast = () =>{
+    const navigation=useNavigation();
+    const gotohome=()=>{
+        navigation.navigate("Home")
+    }
     return(
         <View style={{backgroundColor:"black",flex:1}}>
             <Text style={styles.text}>Now choose some podcasts.</Text>
@@ -25,7 +30,7 @@ const Podcast = () =>{
             image2={require("../assets/spotify/image/library/pi1.png") }
             image3={require("../assets/spotify/image/library/pi3.png") }></Podcastimage>
             </ScrollView>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={gotohome}>
                 <Text style={{fontWeight:"bold",fontSize:16}}>Done</Text>
             </TouchableOpacity>
             </View>

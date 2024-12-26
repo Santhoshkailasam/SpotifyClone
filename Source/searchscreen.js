@@ -5,7 +5,7 @@ import Homeicon from "../assets/spotify/icon/Home_icon.svg"
 import Searchiconf from "../assets/spotify/icon/Search_icon.svg"
 import Libraryicon from "../assets/spotify/icon/Library-small.svg"
 const Searchscreen =()=>{
-    return(
+ return(
         <View style={{backgroundColor:"black",flex:1}}>
             <View style={{flexDirection:"row"}}>
             <View style={styles.searchbox} >
@@ -75,29 +75,8 @@ const Searchscreen =()=>{
             </View>
             </View>
             </ScrollView>
-        <View style={styles.container}> 
-        <View>
-        <TouchableOpacity>
-        <Homeicon style={{marginLeft:30,}}></Homeicon>
-        <Text style={{color:"#777777",marginLeft:20}}>Home</Text>
-        </TouchableOpacity>
         </View>
-        <View>
-        <TouchableOpacity>
-        <Searchiconf style={{marginLeft:100,}}></Searchiconf>
-        <Text style={{color:"white",marginLeft:92}}>Search</Text>
-        </TouchableOpacity>
-        </View>
-        <View>
-        <TouchableOpacity>
-        <Libraryicon style={{marginLeft:100,}}></Libraryicon>
-        <Text style={{color:"#777777",marginLeft:80}}>Your Library</Text>
-        </TouchableOpacity>
-        </View>
-        </View>
-        </View>
-    )
-};
+)};
 const styles=StyleSheet.create({
     searchbox:{
         marginTop:50,

@@ -99,26 +99,9 @@ const LibraryScreen =()=>{
         </View>
         </TouchableOpacity>
         </ScrollView>
-        <View style={styles.container}> 
-        <View>
-        <TouchableOpacity>
-        <Homeicon style={{marginLeft:30,}}></Homeicon>
-        <Text style={{color:"#777777",marginLeft:20}}>Home</Text>
-        </TouchableOpacity>
-        </View>
-        <View>
-        <TouchableOpacity>
-        <Searchicon style={{marginLeft:100,}}></Searchicon>
-        <Text style={{color:"#777777",marginLeft:92}}>Search</Text>
-        </TouchableOpacity>
-        </View>
-        <View>
-        <TouchableOpacity>
-        <Libraryicon style={{marginLeft:100,}}></Libraryicon>
-        <Text style={{color:"white",marginLeft:80}}>Your Library</Text>
-        </TouchableOpacity>
-        </View>
-        </View>
+       <Footer 
+       press={gotoHomescreen}
+       press1={gotosearchscreen}></Footer>
     </View>
     )
 };

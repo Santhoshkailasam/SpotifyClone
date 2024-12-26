@@ -1,22 +1,28 @@
-import Splash from "./Source/Splash";
-import Login from "./Source/Login";
-import Email from "./Source/signupEmail"
-import Password from "./Source/signupassword";
-import Gender from "./Source/signupgender";
-import Name from "./Source/signupname";
-import Artist from "./Source/chooseartist";
-import Podcast from "./Source/choosepodcast";
-import Homescreen from "./Source/Homescreens";
-import Searchscreen from "./Source/searchscreen";
-import Searchall from "./Source/Allsearchscreen";
-import AlbumView from "./Source/albumViewscreen";
-import Albumcontrol from "./Source/Albumcontrolscreenpage";
-import Trackview from "./Source/TrackViewScreen";
-import AlbumViewscreen from "./Source/albumViewscreen";
-import LibraryScreen from "./Source/Libraryscreen";
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import Login from './Source/Login';
+import Searchscreen from './Source/searchscreen';
+import Homescreen from './Source/Homescreens';
+import LibraryScreen from './Source/Libraryscreen';
+import RegisterScreen from './Source/Registerpage';
+import Loginscreen from './Source/EnterLoginpage';
+import { createStackNavigator } from '@react-navigation/stack';  // Correct import
+import AlbumViewscreen from './Source/albumViewscreen';
+
+const Stack = createStackNavigator();  // Create stack navigator
+
 export default function App() {
   return (
-   <LibraryScreen></LibraryScreen>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Register" component={RegisterScreen} />
+        <Stack.Screen name="Signup" component={Loginscreen}/>
+        <Stack.Screen name="Home" component={Homescreen} />
+        <Stack.Screen name="Search" component={Searchscreen} />
+        <Stack.Screen name="Library" component={LibraryScreen} />
+        <Stack.Screen name="Album" component={AlbumViewscreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-

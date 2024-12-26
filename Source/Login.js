@@ -3,14 +3,25 @@ import { View,Text,StyleSheet,Image,TouchableOpacity} from "react-native";
 import Google from "../assets/spotify/icon/google_icon.svg"
 import Facebook from "../assets/spotify/icon/Facebook_icon.svg"
 import Apple from "../assets/spotify/icon/apple_icon.svg"
+import { useNavigation } from "@react-navigation/native";
 const Login=()=>{
-    return(
+   const navigation=useNavigation();
+   const navigationsignin=()=>{
+      navigation.navigate("Signup")
+   }
+   const navigationsignup=()=>{
+    navigation.navigate("Register")
+   }
+   const Backtoprevious =()=>{
+     navigation.navigate("Login")
+   }
+       return(
         <View style={{backgroundColor:"#121212"}}>
         <Image source={require("../assets/spotify/Login_background_img.png") } style={styles.image} />
            <View  style={styles.container}>
              <Text style={{color:"white",fontSize:34,marginLeft:60,fontWeight:"bold"}}>Millions of song.</Text>
              <Text style={{color:"white",fontSize:31,marginLeft:80,fontWeight:"bold"}}>Free on spotify.</Text>
-             <TouchableOpacity style={{backgroundColor:"#46d63e",height:50,width:300,marginLeft:30,borderRadius:40,marginTop:20}}>
+             <TouchableOpacity   onPress={navigationsignup}  style={{backgroundColor:"#46d63e",height:50,width:300,marginLeft:30,borderRadius:40,marginTop:20}}>
                 <Text style={{marginTop:10,marginLeft:96,fontSize:19,fontWeight:"bold"}}>Sign up Free</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button}>
@@ -26,7 +37,7 @@ const Login=()=>{
                 <Text style={styles.buttontext}>Continue with Apple</Text>
             </TouchableOpacity>
             <TouchableOpacity>
-            <Text style={{color:"white",marginLeft:165,marginTop:10,fontWeight:"bold"}}>Log in</Text>
+            <Text style={{color:"white",marginLeft:165,marginTop:10,fontWeight:"bold"}} onPress={navigationsignin}>Log in</Text>
             </TouchableOpacity>
             </View>
         </View>
